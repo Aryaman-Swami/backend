@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+* {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+:root {
+  --primary: coral;
+  --secondary: #3667e9;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3b82f6;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
+body{
+    /* background: url("../images/loginBackground.jpeg"); */
+    background: linear-gradient(150deg,#40D2C7,#96DDFD,#01458C);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    min-height: 100vh;
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container{
+    display: flex;
+    width: 70vw;
+    height: 70vh;
+    overflow: hidden;
+    margin: auto;
+  }
+  .head-text{
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 1rem;
+  }
+
+  .left{
+    background-color: #fff;
+    text-align: left;
+    padding:2rem;
+    width: 55%;
+  }
+
+  .right{
+    width:45%;
+  }
+  @media only screen and (max-width: 768px){
+
+    .container{
+        width:90vw;
+        height: 90vh;
+        border-radius: 12px !important;
+    }
+    .head-text{
+        font-size: 1.5rem;
+    }
+
+
+    .left{
+        padding:0.5rem;
+        width: 100%;
+    }
+    .right{
+display: none;
+    }
+    
+}
+
+  .inputfield{
+    margin:0 1rem;
+    padding:1em;
+    display: block;
+  }
+  label{
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .field{
+    /* border-radius: 8px; */
+    
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    border-radius: 5px;
+    border:1px solid #555;
+    width: 90%;
+    padding: 10px 10px;
+    margin:12px auto;
+  }
+  
+
+  input:focus {
+    border: none !important;
+  }
+  
+  .Card1 {
+    background: url("../images/logintree.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px 0 0 12px;
+    z-index: 10;
+  }
+  
+  .Card2 {
+    background: url("../images/signup.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 0 12px 12px 0;
+  }
+
+
+
+  .button_slide {
+    color: #fff;
+    background-color: #034488;
+    border: 2px solid #034488;
+    border-radius: 5px;
+    padding: 12px 40px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #034488;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+  }
+  
+
+  
+  #outer {
+    width: 364px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+  }
